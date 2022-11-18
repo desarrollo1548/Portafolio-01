@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+  <script src="https://kit.fontawesome.com/9ccfc459f1.js" crossorigin="anonymous"></script>
   <title>S.T AUTORIDAD INDIGENA</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
       <!-- Inicio y barra de navegación -->
     <header class="header">
       <div class="header_navegacion">
-        <img class="header_menu" src="#" alt="icon-menu">
+        <i class="fa-solid fa-bars header_menu"></i>
         <img class="header_logo" src="#" alt="logo">
       </div>
 
@@ -28,7 +29,7 @@
       </nav>
       <!-- barra de navegación para mobile -->
       <div class="modal_navbar-backgroud">
-        <img src="#" alt="close" class="modal_navbar-close">
+        <i class="fa-sharp fa-solid fa-circle-xmark modal_navbar-close"></i>
         <nav class="modal_navbar">
           <ul class="modal_navbar_items">
             <li><a href="#" class="modal_navbar_link">lorem</a></li>
@@ -43,11 +44,78 @@
       <div class="header_compraInicio">
         <div class="header_compra">
           <div class="header_compra-notificacion"><span>0</span></div>
-          <img src="#" alt="carro de compra">
+          <i class="fa-sharp fa-solid fa-cart-shopping"></i>
       </div>
         <img src="#" alt="perfil">
       </div>
     </header>
+    <section class="content">
+      <article class="galeria">
+        <div class="galeria_imagen-container">
+          <i class="fa-solid fa-chevron-left galeria_previus"></i>
+          <i class="fa-solid fa-chevron-right galeria_next"></i>
+        </div>
+        <div class="galeria_thumnails">
+          <img class="galeria_thumnail" id="1"src="./image/producto1.jfif" alt="tumnails 1">
+          <img class="galeria_thumnail"id="2"src="./image/producto2.jfif" alt="tumnails 2">
+          <img class="galeria_thumnail"id="3"src="./image/producto3.jfif" alt="tumnails 3">
+          <img class="galeria_thumnail"id="4"src="./image/producto4.jfif" alt="tumnails 4">
+        </div>
+      </article>
+      <article class="details">
+        <h2 class="details_company">S.T. AUTORIDAD INDIGENA</h2>
+        <h2 class="details_title">PRODUCTOS NUEVOS</h2>
+        <p class="details_description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id consectetur sapiente aperiam fuga nesciunt possimus, quod, aut unde.</p>
+        <div class="details_price">
+          <p class="details_now">$25000 <span class="details_discount">50%</span></p>
+          <p class="details_before"></p>
+        </div>
+        <div class="details_product-quantify">
+          <div class="input">
+            <i class="fa-solid fa-minus input_minus"></i>
+            <input class="input_number" type="number" value="0">
+            <i class="fa-solid fa-plus input_plus"></i>
+          </div>
+          <button class="details_button"><i class="fa-sharp fa-solid fa-cart-shopping"></i>Añadir al carro</button>
+        </div>
+      </article>
+    </section>
+
+
+    <!-- inicio cart modal -->
+    <div class="cart">
+      <p class="cart-modal_title">CARRO</p>
+      <div class="cart-modal_checkout-container">
+        <div class="cart-modal_details-container">
+          <img src="./image/producto1.jfif" alt="">
+          <div>
+            <p class="cart-modal_product">productos artezanales</p>
+            <p class="cart-modal_price">$25000 x3 <span>$75000</span></p>
+          </div>
+          <i class="fa-solid fa-trash cart-modal_delete"></i>
+        </div>
+        <button class="cart-modal_delete">Checkout</button>
+      </div>
+    </div>
+    <!-- inicio galeria modal -->
+    <div class="modal-galeria_background">
+      <article class="modal-galeria">
+        <i class="fa-sharp fa-solid fa-circle-xmark modal_navbar-close"></i>
+        <div class="modal-galeria_imagen-container">
+          <i class="fa-solid fa-chevron-left modal-galeria_previus"></i>
+          <i class="fa-solid fa-chevron-right modal-galeria_next"></i>
+        </div>
+        <div class="modal-galeria_thumnails">
+          <img class="modal-galeria_thumnail"id="m1" src="./image/producto1.jfif" alt="tumnails 1">
+          <img class="modal-galeria_thumnail"id="m2" src="./image/producto2.jfif" alt="tumnails 1">
+          <img class="modal-galeria_thumnail"id="m3" src="./image/producto3.jfif" alt="tumnails 1">
+          <img class="modal-galeria_thumnail"id="m4" src="./image/producto4.jfif" alt="tumnails 1">
+        </div>
+      </article>
+    </div>
+    <footer>
+      <p>@todos los derechos reservados</p>
+    </footer>
   </main>
 </body>
 </html>
