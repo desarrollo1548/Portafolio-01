@@ -1,0 +1,16 @@
+.header{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    padding: 0 24px;
+    @media (min-width: 1300px){
+        height: 112px;
+    }
+    &_navegacion{
+        width: 175px;
+        border: 1px solid blue;
+    }
+}
+
